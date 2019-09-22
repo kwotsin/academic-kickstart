@@ -1,15 +1,15 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "ENet: Real-Time Semantic Segmentation"
-summary: "TensorFlow Implementation of ENet trained on street scenes in Cambridge"
+title: "Data Processing"
+summary: "Streamlining creation of TFRecords in TensorFlow"
 authors: []
 tags: []
 categories: []
-date: 2019-09-22T03:58:55+08:00
+date: 2016-12-22T15:59:55+08:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://github.com/kwotsin/TensorFlow-ENet"
+external_link: "https://github.com/kwotsin/create_tfrecords"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

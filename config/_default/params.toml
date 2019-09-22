@@ -48,9 +48,7 @@ description = ""
 
 # Display a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-logo = "MI.png"
-# logo = "mi2.png"
-# logo = ""
+logo = "icon-32.png"
 
 ############################
 ## Site Features

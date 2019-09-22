@@ -22,9 +22,11 @@ bio: Highly interested in working on the intersection of self-supervised learnin
 
 interests:
 - Computer Vision
+- GANs
 - Self-supervision
 - Unsupervised Learning
 - Information Theory
+
 
 education:
   courses:

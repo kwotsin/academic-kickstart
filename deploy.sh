@@ -1,5 +1,5 @@
 git add .
-git commit -m "Initial commit"
+git commit -m "Update blog"
 git push -u origin master
 
 hugo

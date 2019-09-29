@@ -200,7 +200,7 @@ On the other hand, the **Encoder-and-dot** design (see Figure 6) is a lot more i
 
 To do this projection, one must be able to *non-linearly* project it to a higher dimensional space: that is, one simple linear layer would not do, after all this would just amount to a linear scaling of the features! To introduce this non-linearity, we can simply project the features via a `Linear-ReLU-Linear` shallow MLP network, but Deep InfoMax framework further augments this MLP network with a linear shortcut. While Figure 6 shows a separate FC and convolutional networks for the global and local features respectively, in practice they perform the same role and have the same depth and width (e.g. 1 hidden layer, 2048 units per layer). The difference simply comes from the fact that we are dealing with a feature map for the local features, and not a vector anymore.
 
-In fact, the concept of RKHS has made me rethink *a lot* about designing neural network architectures: if one has to relate features or variables in some way, simply projecting the features to a higher dimensional space and computing their dot products could capture similarity between these features in a more meaningful way. In fact, representations of either text, image, audio, video data can all be similarly captured through *feature vectors*, and now we have an extra tool manipulate these features for greater flexibility in modelling.
+In fact, the concept of RKHS has made me rethink *a lot* about designing neural network architectures: if one has to relate features or variables in some way, simply projecting the features to a higher dimensional space and computing their dot products could capture similarity between these features in a more meaningful way. Representations of either text, image, audio, video data can all be similarly captured through *feature vectors*, and now we have an extra tool manipulate these features for greater flexibility in modelling.
 
 {{< figure src="images/rkhs.png" 
 title="Example of XOR points in 2D (left) versus 3D (right). When in 2D, no linear classifier can separate the red from the blue points, but this is possible when one projects the XOR points to 3D, thus showing the benefits of projecting data to a higher dimensional feature space. [Credits to Arthur Gretton.](http://www.gatsby.ucl.ac.uk/~gretton/coursefiles/lecture4_introToRKHS.pdf)"
@@ -209,7 +209,7 @@ lightbox="true" >}}
 
 ### Statistical Constraint
 
-We finally introduce the statistical constraint that is one of the goals to simultaneously train the model on, apart from maximizing local/global MI. The constraint requires the encoded feature distribution (in this case, the global features) to be close to some statistical prior distribution, using the classic minimax loss found in GANs to measure the divergence $\mathcal{D}(\mathbb{V} \mid\mid \mathbb{U}\_{\psi, \mathbb{P}})$.
+We finally introduce the statistical constraint that is one of the goals to simultaneously train the model on, apart from maximizing local/global MI. The constraint requires the encoded feature distribution (in this case, the global features) to be close to some statistical prior distribution, using the classic minimax loss found in GANs to measure the divergence $\mathcal{D}(\mathbb{V} \mid\mid \mathbb{U}\_{\psi, \mathbb{P}})$. This goal can be defined as:
 
 $$
 (\hat{\omega}, \hat{\psi})\_P = 
@@ -218,7 +218,7 @@ $$
 \mathbb{E}\_{\mathbb{P}}[\log (1 - D\_{\phi}(E\_{\psi}(x)))]
 $$
 
-By inducing this constraint, the feature distribution will not come to be too close to the empirical data distribution -- which could still maximize the MI objectives, but do not actually maximize MI with the true data distribution. Interestingly, in practice, the authors have found that using a uniform distribution as the prior produces the best performance.
+where $\phi$ similarly represents the parameters of the discriminator network for the prior matching task. By inducing this constraint, the feature distribution will not come to be too close to the empirical data distribution -- which could still maximize the MI objectives, but do not actually maximize MI with the true data distribution. Interestingly, in practice, the authors have found that using a uniform distribution as the prior produces the best performance.
 
 ##### Architecture
 
@@ -227,7 +227,7 @@ title="Prior constraint network to match the distribution of encoded features to
 numbered="true"
 lightbox="true" >}}
 
-As seen in Figure 8, one simply produces a "fake" sample from sampling the prior distribution a feature vector of the same size as $Y$. A shallow MLP network then acts as a discriminator to product a scalar logit, which can then produce the probability of real/fake (e.g. via a sigmoid function).
+As seen in Figure 8, one simply produces a "fake" sample from sampling the prior distribution a feature vector of the same size as $Y$. A shallow MLP network then acts as a discriminator to product a scalar logit for a real/fake input, which can then produce the probability of real/fake (e.g. via a sigmoid function).
 
 ### Final Objective
 
@@ -274,7 +274,7 @@ In practice, the authors have found that setting $\alpha = 0$, $\beta=1$ and $\g
 $$ -->
 
 ## Conclusion
-This post merely aims to present the main idea of Deep InfoMax, but there is a lot more material in the original paper, which the reader is highly encouraged to read. Some further thoughts of unsupervised pre-training: it is interesting to approach the subject from the point of view of *initialization*. In such pre-training, one essentially obtains a set of hopefully near-optimal weights that could be used for a variety of downstream tasks, and in fact, if one was (really) lucky, we can even random initialize the weights without any pre-training! 
+This post merely aims to present the main idea of Deep InfoMax, but there is a lot more material in the original paper, which the reader is highly encouraged to read. Further thoughts: it is interesting to approach the representation learning from the point of view of *initialization*. Through pre-training tasks, one essentially obtains a set of hopefully near-optimal weights for a model that could be used for a variety of downstream tasks, and in fact, if one was (really) lucky, we can even random initialize the weights without any pre-training! 
 
 Overall, this paper was highly inspiring - it was the first paper that introduced me a principled (and rigorous) way of performing mutual information maximization, and the ideas proposed has deeply influenced the way I think about my current research on GANs.
 

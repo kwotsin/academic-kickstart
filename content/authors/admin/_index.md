@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Highly interested in working on the intersection of self-supervised learning and computer vision.
+bio: I'm a final year computer science student who enjoys working on the intersection of computer vision, self-supervised learning and information theory.
 
 interests:
 - Computer Vision

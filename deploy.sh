@@ -1,5 +1,3 @@
-git config credential.helper 'cache --timeout=300'
-
 git add .
 git commit -m "Update blog"
 git push -u origin master

@@ -16,7 +16,7 @@ baseurl = "https://kwotsin.github.io/"
 copyright = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-89673162-1"
 
 ############################
 ## Advanced options below ##

@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "InfoMax-GAN: Mutual Information Maximization for Adversarial Image Generation"
+title: "InfoMɑx-GAN: Mutuɑl Informɑtion Mɑximizɑtion for Improved Adversɑriɑl Imɑge Generɑtion"
 authors: [Kwot Sin Lee, Ngoc-Trung Tran, Ngai-Man Cheung]
 date: 2019-10-03T01:03:06+08:00
 doi: ""

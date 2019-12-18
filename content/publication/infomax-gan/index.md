@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "InfoMɑx-GAN: Mutuɑl Informɑtion Mɑximizɑtion for Improved Adversɑriɑl Imɑge Generɑtion"
+title: "InfoMax-GAN: Mutual Information Maximization for Improved Adversarial Image Generation"
 authors: [Kwot Sin Lee, Ngoc-Trung Tran, Ngai-Man Cheung]
 date: 2019-10-03T01:03:06+08:00
 doi: ""
@@ -19,13 +19,13 @@ publication_types: ["0"]
 publication: "*NeurIPS 2019 Workshop on Information Theory and Machine Learning*"
 publication_short: ""
 
-abstract: ""
+abstract: "Recent successes in representation learning have drawn upon the idea of mutual information maximization between encoded features in order to maximize on a lower bound of the InfoMax objective. Motivated by these successes, we propose a principled framework to show how an InfoMax objective improves natural image synthesis through addressing two fundamental issues in GANs: catastrophic forgetting of the discriminator, and mode collapse of the generator. We take a contrastive learning approach to the InfoMax objective by maximizing mutual information between the local and global features of real/fake images, and show this improves the performances of popular, state of the art conditional and unconditional GAN architectures across multiple datasets under the same training conditions. We perform empirical and theoretical analyses to understand the source of these improvements."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags: []
-categories: []
+categories: [information-theory, gans]
 featured: false
 
 # Custom links (optional).
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://drive.google.com/file/d/13T8dBxFHYmypBhh2_r8KGkYTNmGcPvFP/view
 url_code:
 url_dataset:
 url_poster:
@@ -50,7 +50,7 @@ url_video:
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
-  focal_point: ""
+  focal_point: "Center"
   preview_only: false
 
 # Associated Projects (optional).

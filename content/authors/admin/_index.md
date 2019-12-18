@@ -71,4 +71,4 @@ email: ""
 - Visitors -->
 ---
 
-I'm a final year computer science student highly interested in computer vision problems. In particular, I enjoy working on the intersection of Generative Adversarial Networks (GANs), self-supervision, and information theory. Interaction often spurs new ideas - feel free to contact me if you'd like to discuss about related ideas!
+I'm a final year computer science student who enjoys working on the intersection of computer vision, self-supervised learning and information theory. My current research focuses on using information theoretic ideas to improve the performance of Generative Adversarial Networks (GANs). Interaction often spurs new ideas - feel free to contact me if you'd like to discuss about related ideas!

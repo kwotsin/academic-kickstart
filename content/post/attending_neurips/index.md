@@ -62,7 +62,7 @@ numbered="false"
 lightbox="true" >}}
 
 ## Reading List
-A reading list I collated from interesting papers I found in the conference.
+A reading list I collated from interesting papers I found at the conference.
 
 #### Generative Modeling
 1. [Progressive Augmentation of GANs](https://arxiv.org/abs/1901.10422)

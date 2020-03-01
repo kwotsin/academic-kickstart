@@ -1,4 +1,4 @@
----
+<!-- ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "InfoMax-GAN: Mutual Information Maximization for Improved Adversarial Image Generation"
@@ -68,3 +68,4 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+ -->

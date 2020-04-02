@@ -42,7 +42,7 @@ The resulting work is now released as [Mimicry](https://github.com/kwotsin/mimic
 
 - A set of [baselines scores](https://github.com/kwotsin/mimicry#baselines) for popular GANs that one could easily compare against, with transparent training hyperparameters and evaluation methods illustrated. For instance, when computing FID, the exact sample size is given. Currently, there are over 70 data points produced from 6 different GANs, 7 datasets and 3 metrics. It is hoped this could reduce the need for researchers to cross-cite many different papers for closest results.
 
-- Standardized implementations of popular GANs, which I aim to produce scores as closely as possible. To do so, I included a section on [Reproducibility](https://github.com/kwotsin/mimicry#reproducibility) in the project page.
+- Standardized implementations of popular GANs, which I aim to reproduce scores as closely as possible. To do so, I included a section on [Reproducibility](https://github.com/kwotsin/mimicry#reproducibility) in the project page.
 
 - A framework for researchers to focus on implementing GANs, rather than rewriting boilerplate code for training/evaluation. Currently, several popular metrics like FID, Kernel Inception Distance (KID) and Inception Score (IS) are supported. For *backwards compatibility* of the scores, I adopted the original TensorFlow implementations of these metrics, so scores produced can be compared with those in existing literature.
 

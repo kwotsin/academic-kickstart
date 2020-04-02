@@ -38,7 +38,7 @@ Even when one nails down the implementation, there is yet another issue: current
 
 Thus, some time back, I decided to re-implement all models I'm going to compare against for my research, in order to ensure comparisons can be done the most fairly. To do this, I had to re-implement the original models and make sure they perform very close to the original scores, so I can be sure of their correctness. The resulting data became very useful for my research on InfoMax-GAN (my prior work), and I thought it might be a good idea to formalize the code base a bit more and release it as an open source work, in case people might find it useful.
 
-The resulting work is now released as [Mimicry](https://github.com/kwotsin/mimicry), which is now available on GitHub and PyPI. Specifically, the library aims to provide the following:
+The resulting work is now released as [Mimicry](https://github.com/kwotsin/mimicry), which is available on GitHub and PyPI. Specifically, the library aims to provide the following:
 
 - A set of [baselines scores](https://github.com/kwotsin/mimicry#baselines) for popular GANs that one could easily compare against, with transparent training hyperparameters and evaluation methods illustrated. For instance, when computing FID, the exact sample size is given. Currently, there are over 70 data points produced from 6 different GANs, 7 datasets and 3 metrics. It is hoped this could reduce the need for researchers to cross-cite many different papers for closest results.
 

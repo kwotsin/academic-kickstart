@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: I'm a final year computer science student who enjoys working on the intersection of computer vision, self-supervised learning and information theory.
+bio: I'm a final year computer science student who enjoys working on the intersection of Generative Adversarial Networks (GANs), information theory, and computer vision.
 
 interests:
 - Computer Vision
@@ -71,4 +71,4 @@ email: ""
 - Visitors -->
 ---
 
-I'm a final year computer science student who enjoys working on the intersection of computer vision, self-supervised learning and information theory. My current research focuses on using information theoretic ideas to improve the performance of Generative Adversarial Networks (GANs). Interaction often spurs new ideas - feel free to contact me if you'd like to discuss about related ideas!
+I'm a final year computer science student who enjoys working on the intersection of Generative Adversarial Networks (GANs), information theory, and computer vision. I'm currently spending a lot more time researching on and studying GANs, and have also built [Mimicry](https://github.com/kwotsin/mimicry), a library for reproducible GAN research. Feel free to contact me if you'd like to discuss on more ideas!

@@ -66,7 +66,7 @@ title="Residual backbone networks for generator and discriminator."
 numbered="true"
 lightbox="true" >}}
 
-Firstly, we construct the models based on the residual network backbone architectures, which have been frequently used in recent state-of-the-art GANs. SSGAN similarly does this and follows the architecture in [Miyato et al](https://arxiv.org/abs/1802.05957), where Spectral Normalization GAN (SNGAN) was introduced. which we similarly adopt. Figure 2 illustrates this particular set of backbone architectures, which we adopt. Specifically, we know from Figure 2 the key variables are:
+Firstly, we construct the models based on the residual network backbone architectures, which have been frequently used in recent state-of-the-art GANs. SSGAN similarly does this and follows the architecture in [Miyato et al](https://arxiv.org/abs/1802.05957), where Spectral Normalization GAN (SNGAN) was introduced. which we similarly adopt. Figure 2 illustrates this particular set of backbone architectures. Specifically, we know from Figure 2 the key variables are:
 
 - `nz=128`: The initial noise vector dimension is 128.
 - `ngf=256`: The generator feature map size is 256.
@@ -274,7 +274,7 @@ def train_step(self,
                global_step=None,
                **kwargs):
     """
-    Train step function for discirminator.
+    Train step function for discriminator.
     """
     self.zero_grad()
 
@@ -333,7 +333,7 @@ def train_step(self,
                global_step=None,
                **kwargs):
     """
-    Train step function for discirminator.
+    Train step function for discriminator.
     """
     self.zero_grad()
 

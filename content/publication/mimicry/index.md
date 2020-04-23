@@ -16,7 +16,7 @@ publishDate: 2020-04-23T16:56:06+01:00
 publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*CVPR 2020 Workshop on AI for Content Creation*"
+publication: "*CVPR 2020 AI for Content Creation Workshop*"
 publication_short: ""
 
 abstract: "Advancing the state of Generative Adversarial Networks (GANs) research requires one to make careful and accurate comparisons with existing works. Yet, this is often difficult to achieve in practice when models are often implemented differently using varying frameworks, and evaluated using different procedures even when the same metric is used. To mitigate these issues, we introduce Mimicry, a lightweight PyTorch library that provides implementations of popular state-of-the-art GANs and evaluation metrics to closely reproduce reported scores in the literature. We provide comprehensive baseline performances of different GANs on seven widely-used datasets by training these GANs under the same conditions, and evaluating them across three popular GAN metrics using the same procedures."
